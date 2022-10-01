@@ -1,0 +1,68 @@
+POST http://localhost:3004/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+
+###
+POST http://localhost:3004/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+GET http://localhost:3004/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
+
+
+###
+GET http://localhost:3004/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
+
+###
+GET http://localhost:3004/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
+
+
+###
+GET http://localhost:3004/tweets/6/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
+
+
+###
+GET http://localhost:3004/tweets/8/likes/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NjcxMjk5fQ.PPePVKJ47lEAvJRuW_hTLyk5V11VViGHau1rNzBSynk
+
+
+###
+GET http://localhost:3004/tweets/6/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
+
+
+###
+GET http://localhost:3004/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NjcxMjk5fQ.PPePVKJ47lEAvJRuW_hTLyk5V11VViGHau1rNzBSynk
+
+
+###
+POST  http://localhost:3004/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NjcxMjk5fQ.PPePVKJ47lEAvJRuW_hTLyk5V11VViGHau1rNzBSynk
+Content-Type: application/json
+
+{
+    "tweet": "The Mornings ..."
+}
+
+
+###
+DELETE http://localhost:3000/tweets/13/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU2NTE0MjA0fQ.Sx-r60ag0T84albex1PIUHrZAOJSJL2qXauDU9qmWmA
